@@ -77,6 +77,10 @@ $(document).ready(function(){
             $('#summaryDiv').append($(this).attr('id'));
             $('#summaryDiv').append('<br>');
         });
+        $('#summaryDiv').append('Change Pocket: '+$('#changePckt').val());
+        $('#summaryDiv').append('<br>');
+        $('#summaryDiv').append('Suspender Buttons: '+$('#suspenders').val());
+        $('#summaryDiv').append('<br>');
         $('#summaryDiv').append('Coat Monogram: '+ $('#monoText').val()+' Color: '+$('#monoColorName').val()+' Font: '+$('#monoFontName').val());
         $('#summaryDiv').append('<br>');
         $('#summaryDiv').append('Pants Monogram: '+ $('#monoPantsText').val()+' Color: '+$('#monoPantsColorName').val()+' Font: '+$('#monoPantsFontName').val());
