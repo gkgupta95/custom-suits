@@ -1,0 +1,404 @@
+<meta http-equiv="pragma" content="no-cache" />
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Design Your Suit</title>
+    <link rel='stylesheet' type='text/css' href='index.css'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <div id='logo+Summary'>
+        <img id='logo' src='https://cdn.shopify.com/s/files/1/1046/1302/t/2/assets/logo-inverted.png?2041073127092658543'/>
+        <p id='Summary'>Summary</p>
+    </div>
+    <h1>Design Your Suit</h1>
+    <div id='header'>
+        <h2 id='coat-header'>Coat</h2> <h2 id='pants-header'>Pants</h2>
+    </div>
+    <div id='options'>
+        <p id='opButton'>1</p> <p class='opCoat' id='opLapel'>2</p> <p class='opCoat' id='opVent'>3</p> <p class='opCoat' id='opPocket'>4</p> <p id='opMonogram'>5</p>
+        <p class='opPant' id='opPantStyle'>1</p> <p class='opPant' id='opPantsPocket'>2</p> <p class='opPant' id='opPantsClose'>3</p> <p class='opPant' id='opCuffs'>4</p> <p class='opPant' id='opMonoPants'>5</p>
+    </div>
+    <div id='Button' class='subHeaders'>
+        <p class='sectionTitle'>Number of Buttons</p>
+        <div id='Coat: 1 Button'>
+            <p>One</p>
+            <img id='1ButImg' src="http://i65.tinypic.com/29yje4m.jpg" border="0"/>
+        </div>
+        <div id='Coat: 2 Button' class='selectedDiv'>
+            <p class='recommended'>Two</p>
+            <img id='2ButImg' src="http://i63.tinypic.com/m8fxqu.jpg" border="0"/>
+        </div>
+        <div id='Coat: 3 Button'>
+            <p>Three</p>
+            <img id='3ButImg' src="http://i67.tinypic.com/244vby8.jpg" border="0"/>
+        </div>
+        <div id='Coat: 6 Button'>
+            <p>Six</p>
+            <img id='6ButImg' src="http://i67.tinypic.com/1zb6jxt.jpg" border="0"/>
+        </div>
+    </div>
+    <div id='Lapel' class='subHeaders'>
+        <p class='sectionTitle'>Lapel Shape</p>
+        <div id='Lapel: Notch' class='selectedDiv'>
+            <p class='recommended'>Notch</p>
+            <img id='notchImage' src="http://i65.tinypic.com/1zojh2h.jpg" border="0"/>
+        </div>
+        <div id='Lapel: Peak'>
+            <p>Semi-Notch</p>
+            <img id='peakImage' src="http://i67.tinypic.com/2w6tau0.jpg" border="0"/>
+        </div>
+        <div id='Lapel: Semi Notch'>
+            <p>Peak</p>
+            <img id='semiNotchImage' src="http://i63.tinypic.com/2dlvx4j.jpg" border="0"/>
+        </div>
+        <div id='Lapel: Semi Peak'>
+            <p>Semi-Peak</p>
+            <img id='semiPeakImage' src="http://i68.tinypic.com/o77q7l.jpg" border="0"/>
+        </div>
+    </div>
+    <div id='Vent' class='subHeaders'>
+        <p class='sectionTitle'>Number of Vents</p>
+        <div id='Vent: No Vent'>
+            <p>Zero</p>
+            <img id='noVentImage' src="http://i65.tinypic.com/23tlezq.jpg" border="0"/>
+        </div>
+        <div id='Vent: 1 Vent'>
+            <p>One</p>
+            <img id='1VentImage' src="http://i66.tinypic.com/2z6i0l5.jpg" border="0"/>
+        </div>
+        <div id='Vent: 2 Vent' class='selectedDiv'>
+            <p class='recommended'>Two</p>
+            <img id='2VentImage' src="http://i64.tinypic.com/24wre53.jpg" border="0"/>
+        </div>
+    </div>
+    <div id='Pocket' class='subHeaders'>
+        <p class='sectionTitle'>Pockets</p>
+        <p id='pocketSectionSubtitle'>Interior Breast Left</p>
+        <div id='InteriorBreastLeft'>
+            <div id='Interior Breast Left: None'>
+                <p>None</p>
+                <img src="http://i65.tinypic.com/2ztf3p3.jpg" border="0" id='IntBrLNoneImg'/>
+            </div>
+            <div id='Interior Breast Left: Regular' class='selectedDiv'>
+                <p class='recommended'>Regular</p>
+                <img src="http://i63.tinypic.com/90vog7.jpg" border="0" id='IntBrLDbesomImg'/>
+            </div>
+            <div id='Interior Breast Left: Regular w/ Tab, Button'>
+                <p>Regular w/ Tab, Button</p>
+                <img src="http://i65.tinypic.com/29aw9pd.jpg" border="0" id='IntBrLTabImg'/>
+            </div>
+            <div id='Interior Breast Left: Regular w/ Flap'>
+                <p>Regular w/ Flap</p>
+                <img src="http://i63.tinypic.com/14dzp20.jpg" border="0" id='IntBrLDbesomFlapImg'/>
+            </div>
+            <div id='Interior Breast Left: Regular w/ Flap, Button'>
+                <p>Regular w/ Flap, Button</p>
+                <img src="http://i63.tinypic.com/muiljd.jpg" border="0" id='IntBrLDbButImg'/>
+            </div>
+        </div>
+        <p id='pocketSectionSubtitle'>Interior Breast Right</p>
+        <div id='InteriorBreastRight'>
+            <div id='Interior Breast Right: Regular'>
+                <p>None</p>
+                <img src="http://i65.tinypic.com/2ztf3p3.jpg" border="0" id='IntBrRNoneImg'/>
+            </div>
+            <div id='Interior Breast Right: Regular'>
+                <p>Regular</p>
+                <img src="http://i63.tinypic.com/90vog7.jpg" border="0" id='IntBrRDbesomImg'/>
+            </div>
+            <div id='Interior Breast Right: Regular w/ Tab, Button' class='selectedDiv'>
+                <p class='recommended'>Regular w/ Tab, Button</p>
+                <img src="http://i65.tinypic.com/29aw9pd.jpg" border="0" id='IntBrRTabImg'/>
+            </div>
+            <div id='Interior Breast Right: Regular w/ Flap'>
+                <p>Regular w/ Flap</p>
+                <img src="http://i63.tinypic.com/14dzp20.jpg" border="0" id='IntBrRDbesomFlapImg'/>
+            </div>
+            <div id='Interior Breast Right: Regular w/ Flap, Button'>
+                <p>Regular w/ Flap, Button</p>
+                <img src="http://i63.tinypic.com/muiljd.jpg" border="0" id='IntBrRDbBut'/>
+            </div>
+        </div>
+        <p id='pocketSectionSubtitle'>Interior Additional Left</p>
+        <div id='IntAdL'>
+            <div id='Interior Additional Left: None'>
+                <p>None</p>
+                <img src="http://i68.tinypic.com/1zlajap.jpg" border="0" id='IntAdLNoneNoneImg'/>
+            </div>
+            <div id='Interior Additional Left: Cell Phone' class='selectedDiv'>
+                <p class='recommended'>Cell Phone</p>
+                <img src="http://i64.tinypic.com/311o23c.jpg" border="0" id='IntAdLCellImg'/>
+            </div>
+            <div id='Interior Additional Left: Pen'>
+                <p>Pen/Pencil</p>
+                <img src="http://i68.tinypic.com/24vvfqc.jpg" border="0" id='IntAdLPenImg'/>
+            </div>
+        </div>
+        <p id='pocketSectionSubtitle'>Interior Additional Right</p>
+        <div id='IntAdR'>
+            <div id='Interior Additional Right: None'>
+                <p>None</p>
+                <img src="http://i68.tinypic.com/1zlajap.jpg" border="0" id='IntAdRNoneNoneImg'/>
+            </div>
+            <div id='Interior Additional Right: Cell Phone'>
+                <p>Cell Phone</p>
+                <img src="http://i63.tinypic.com/fng2c.jpg" border="0" id='IntAdRCellImg'/>
+            </div>
+            <div id='Interior Additional Right: Pen' class='selectedDiv'>
+                <p class='recommended'>Pen/Pencil</p>
+                <img src="http://i64.tinypic.com/v8ct3d.jpg" border="0" id='IntAdRPenImg'/>
+            </div>
+        </div>
+        <p id='pocketSectionSubtitle'>Exterior Breast</p>
+        <div id='breastOuter'>
+            <div id='Exterior Breast: None'>
+                <p>None</p>
+                <img src="http://i67.tinypic.com/1zvvia0.jpg" border="0" id='breastNoneImg'/>
+            </div>
+            <div id='Exterior Breast: Welt' class='selectedDiv'>
+                <p class='recommended'>Welt</p>
+                <img src="http://i65.tinypic.com/20gxhzq.jpg" border="0" id='breastWeltImg'/>
+            </div>
+            <div id='Exterior Breast: Double Besom'>
+                <p>Double Besom</p>
+                <img src="http://i64.tinypic.com/2l5xj.jpg" border="0" id='breastDbesomImg'/>
+            </div>
+        </div>
+        <p id='pocketSectionSubtitle'>Exterior Lower (Both Sides)</p>
+        <div id='lowerOuter'>
+            <div id='Exterior Lower: None'>
+                <p>None</p>
+                <img src="http://i64.tinypic.com/29cufs.jpg" border="0" id='lowerNoneImg'/>
+            </div>
+            <div id='Exterior Lower: Welt'>
+                <p>Welt</p>
+                <img src="http://i65.tinypic.com/ok5p91.jpg" border="0" id='lowerWeltImg'/>
+            </div>
+            <div id='Exterior Lower: Double Besom'>
+                <p>Double Besom</p>
+                <img src="http://i67.tinypic.com/oii0zd.jpg" border="0" id='lowerDbesomImg'/>
+            </div>
+            <div id='Exterior Lower: Double Besom w/ Flap' class='selectedDiv'>
+                <p class='recommended'>Double Besom w/ Flap</p>
+                <img src="http://i68.tinypic.com/2rpwh2c.jpg" border="0" id='lowerDBFlapImg'/>
+            </div>
+        </div>
+        <p id='pocketSectionSubtitle'>Exterior Ticket</p>
+        <div id='ticket'>
+            <div id='Ticket: None' class='selectedDiv'>
+                <p class='recommended'>None</p>
+                <img src="http://i64.tinypic.com/2uxz5z9.jpg" border="0" id='ticketNoneImg'/>
+            </div>
+            <div id='Ticket: Welt'>
+                <p>Welt</p>
+                <img src="http://i68.tinypic.com/vy7289.jpg" border="0" id='ticketWeltImg'/>
+            </div>
+            <div id='Ticket: Double Besom'>
+                <p>Double Besom</p>
+                <img src="http://i67.tinypic.com/2jd58bk.jpg" border="0" id='ticketDbesomImg'/>
+            </div>
+        </div>
+    </div>
+    <div id='Monogram' class='subHeaders' class='selectedDiv'>
+        <p class='sectionTitle'>Monogram</p>
+        <div id='monogramForm'>
+            <p style='text-align:center;font-family:Palatino;font-weight:bold;font-size:115%;margin-bottom:-0.5%'>Monogram</p><br>
+            <p class='monoFormSec' style='margin-left:10%'>Color Name/Number: <input type="text" id="monoColorName"></p>
+            <p class='monoFormSec' style='margin-left:12%'>Font:
+                <select id="monoFontName">
+                  <option value="Block">Block</option>
+                  <option value="Bradley">Bradley</option>
+                  <option value="Calligraphy" selected='selected'>Calligraphy</option>
+                  <option value="Copper Plate">Copper Plate</option>
+                  <option value="Dom Casual">Dom Casual</option>
+                  <option value="Jazz">Jazz</option>
+                  <option value="Outline">Outline</option>
+                  <option value="Rockwell">Rockwell</option>
+                  <option value="Times Roman">Times Roman</option>
+                </select>
+            </p>
+            <p class='monoFormSec' style='margin-left:15%'>Text: <input type='text' id="monoText" rows='1' cols='25' placeholder='Up to 25 characters' maxlength='25' style='width: 175px'></p>
+            <img style='max-width:99%' id='monoColorImg' src="http://i64.tinypic.com/xefcw.jpg" border="0"></a>
+        </div>
+    </div>
+    <div id='pantStyle' class='subHeaders'>
+        <p class='sectionTitle'>Pant Style</p>
+        <div id='Pant Style: Flat Front' class='selectedDiv'>
+            <p class='recommended'>Flat Front</p>
+            <img id='flatFrontImage' src="http://i63.tinypic.com/10ft3r5.jpg" border="0"/>
+        </div>
+        <div id='Pant Style: 1 Pleat'>
+            <p>Single-Pleated</p>
+            <img id='1PleatImage' src="http://i65.tinypic.com/mt2wqx.jpg" border="0"/>
+        </div>
+        <div id='Pant Style: 2 Pleat'>
+            <p>Double-Pleated</p>
+            <img id='2PleatImage' src="http://i64.tinypic.com/2jbo7ko.jpg" border="0"/>
+        </div>
+    </div>
+    <div id='pantsPocket' class='subHeaders'>
+        <p class='sectionTitle'>Pockets</p>
+        <p id='pocketSectionSubtitle'>Front (Both Sides)</p>
+            <p style='text-align:center'>Interior Change Pockets:
+                <select name="changePckt">
+                  <option value="None">None</option>
+                  <option value="Left" selected='selected'>Left</option>
+                  <option value="Right">Right</option>
+                  <option value="Both">Both</option>
+                </select>
+            </p>
+        <div id='frontPant'>
+            <div id='Pant Front Pocket: Side Seam'>
+                <p>Side Seam</p>
+                <img id='sideSeamImg' src="http://i65.tinypic.com/14e56wn.jpg" border="0"/>
+            </div>
+            <div id='Pant Front Pocket: Quarter Top' class='selectedDiv'>
+                <p class='recommended'>Quarter Top</p>
+                <img id='quarTopImg' src="http://i66.tinypic.com/s6n05y.jpg" border="0"/>
+            </div>
+            <div id='Pant Front Pocket: Half Top'>
+                <p>Half Top</p>
+                <img id='halfTopImg' src="http://i65.tinypic.com/25ridev.jpg" border="0"/>
+            </div>
+            <div id='Pant Front Pocket: Western'>
+                <p>Western</p>
+                <img id='westernImg' src="http://i66.tinypic.com/2nao4d5.jpg" border="0"/>
+            </div>
+        </div>
+        <p id='pocketSectionSubtitle'>Back Left</p>
+        <div id='backLeft'>
+            <div id='Pant Back Left: Double Besom' class='selectedDiv'>
+                <p  class='recommended'>Double Besom</p>
+                <img id='leftPantDblImg' src="http://i68.tinypic.com/23ijgag.jpg" border="0"/>
+            </div>
+            <div id='Pant Back Left: Double Besom w/ Button'>
+                <p>Double Besom w/ Button</p>
+                <img id='leftPantBtnImg' src="http://i67.tinypic.com/vo1oqp.jpg" border="0"/>
+            </div>
+            <div id='Pant Back Left: Double Besom w/ Flap'>
+                <p>Double Besom w/ Flap</p>
+                <img id='leftPantFlapImg' src="http://i67.tinypic.com/e0xg8.jpg" border="0"/>
+            </div>
+            <div id='Pant Back Left: Double Besom w/ Flap, Button'>
+                <p>Double Besom w/ Flap, Button</p>
+                <img id='leftPantFlapBtnImg' src="http://i67.tinypic.com/2ykl1l2.jpg" border="0"/>
+            </div>
+        </div>
+        <p id='pocketSectionSubtitle'>Back Right</p>
+        <div id='backRight'>
+            <div id='Pant Back Right: Double Besom'>
+                <p >Double Besom</p>
+                <img id='rightPantDblImg' src="http://i68.tinypic.com/23ijgag.jpg" border="0"/>
+            </div>
+            <div id='Pant Back Right: Double Besom w/ Button' class='selectedDiv'>
+                <p class='recommended'>Double Besom w/ Button</p>
+                <img id='rightPantBtnImg' src="http://i67.tinypic.com/vo1oqp.jpg" border="0"/>
+            </div>
+            <div id='Pant Back Right: Double Besom w/ Flap'>
+                <p>Double Besom w/ Flap</p>
+                <img id='rightPantFlapImg' src="http://i67.tinypic.com/e0xg8.jpg" border="0"/>
+            </div>
+            <div id='Pant Back Right: Double Besom w/ Flap, Button'>
+                <p>Double Besom w/ Flap, Button</p>
+                <img id='rightPantFlapBtnImg' src="http://i67.tinypic.com/2ykl1l2.jpg" border="0"/>
+            </div>
+        </div>
+        <p id='pocketSectionSubtitle'>Watch</p>
+        <div id='watch'>
+            <div id='Watch Pocket: None'>
+                <p >None</p>
+                <img id='noWatchImg' src="http://i66.tinypic.com/s6n05y.jpg" border="0"/>
+            </div>
+            <div id='Watch Pocket: Classic' class='selectedDiv'>
+                <p class='recommended'>Classic</p>
+                <img id='classicWatchImg' src="http://i65.tinypic.com/20r75m0.jpg" border="0"/>
+            </div>
+            <div id='Watch Pocket: Classic w/ Flap'>
+                <p>Classic w/ Flap</p>
+                <img id='classFlapWatchImg' src="http://i64.tinypic.com/vnlger.jpg" border="0"/>
+            </div>
+            <div id='Watch Pocket: Classic w/ Flap, Button'>
+                <p>Classic w/ Flap, Button</p>
+                <img id='classPantFlapBtnImg' src="http://i63.tinypic.com/28i2emr.jpg" border="0"/>
+            </div>
+        </div>
+    </div>
+    <div id='pantsWaist' class='subHeaders'>
+        <p class='sectionTitle'>Waistband</p>
+            <p style='text-align:center'>Add Suspender Buttons:
+                <select name="suspenders">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+            </p>
+        <div id='Pants Waist: Hook and Bar'>
+            <p>Hook and Bar</p>
+            <img id='hookBarImg' src="http://i64.tinypic.com/24zjf5d.jpg" border="0"/>
+        </div>
+        <div id='Pants Waist: Button Through'>
+            <p>Button Through</p>
+            <img id='buttonThroughImg' src="http://i68.tinypic.com/v774sl.jpg" border="0"/>
+        </div>
+        <div id='Pants Waist: Extended Double Hook and Bar'>
+            <p>Extended Double Hook</p>
+            <img id='dblHookBarImg' src="http://i65.tinypic.com/1q1v9j.jpg" border="0" border="0"/>
+        </div>
+        <div id='Pants Waist: Extended Hook and Button' class='selectedDiv'>
+            <p class='recommended'>Extended Hook and Button</p>
+            <img id='hookButtonImg' src="http://i65.tinypic.com/35dcglv.jpg" border="0"/>
+        </div>
+        <div id='Pants Waist: Extended Double Button'>
+            <p>Extended Double Button</p>
+            <img id='dblButtonImg' src="http://i65.tinypic.com/6iz969.jpg" border="0"/>
+        </div>
+    </div>
+    <div id='Cuffs' class='subHeaders'>
+        <p class='sectionTitle'>Cuffs</p>
+        <div id='Cuffs: None' class='selectedDiv'>
+            <p class='recommended'>None</p>
+            <img id='noCuffsImage' src="http://i66.tinypic.com/160349l.jpg" border="0"/>
+        </div>
+        <div id='Cuffs: 1.25'>
+            <p>1 &frac14"</p>
+            <img id='smallCuffsImage' src="http://i66.tinypic.com/6nxxn6.jpg" border="0"/>
+        </div>
+        <div id='Cuffs: 2'>
+            <p>2"</p>
+            <img id='bigCuffsImage' src="http://i63.tinypic.com/2rot1md.jpg" border="0"/>
+        </div>
+    </div>
+    <div id='MonogramPants' class='subHeaders'>
+        <p class='sectionTitle'>Monogram</p>
+        <div id='monogramPantsForm'>
+            <p style='text-align:center;font-family:Palatino;font-weight:bold;font-size:115%;margin-bottom:-0.5%'>Monogram</p><br>
+            <p class='monoFormSec' style='margin-left:10%'>Color Name/Number: <input type="text" id="monoPantsColorName"></p>
+            <p class='monoFormSec' style='margin-left:12%'>Font:
+                <select id="monoPantsFontName">
+                  <option value="Block">Block</option>
+                  <option value="Bradley">Bradley</option>
+                  <option value="Calligraphy" selected='selected'>Calligraphy</option>
+                  <option value="Copper Plate">Copper Plate</option>
+                  <option value="Dom Casual">Dom Casual</option>
+                  <option value="Jazz">Jazz</option>
+                  <option value="Outline">Outline</option>
+                  <option value="Rockwell">Rockwell</option>
+                  <option value="Times Roman">Times Roman</option>
+                </select>
+            </p>
+            <p class='monoFormSec' style='margin-left:15%'>Text: <input type='text' id="monoPantsText" rows='1' cols='25' placeholder='Up to 25 characters' maxlength='25' style='width: 175px'></p>
+            <img style='max-width:99%' id='monoColorImg' src="http://i64.tinypic.com/xefcw.jpg" border="0"></a>
+        </div>
+    </div>
+    <div id='sumDiv' class='subHeaders'>
+        <p class='sectionTitle'>Summary</p>
+        <p style='text-align:center;font-weight:bold'>Please copy and paste everything below this line into your order form:</p>
+        <div id='summaryDiv'>
+        </div>
+    </div>
+</body>
+</html>
+
+
