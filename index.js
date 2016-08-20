@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('#Button').fadeIn();
     optionBorderOn('#opButton');
 
-    $('img').not('#monoColorImg').click(function(){
+    $('img').not('#monoColorImg').not('#logo+summary').click(function(){
         unselectAll(this);//turn
         $(this).parent('div').addClass('selectedDiv');
     });
@@ -77,9 +77,9 @@ $(document).ready(function(){
             $('#summaryDiv').append($(this).attr('id'));
             $('#summaryDiv').append('<br>');
         });
-        $('#summaryDiv').append('Change Pocket: '+$('#changePckt').val());
+        $('#summaryDiv').append('Change Pocket: '+$('#changePckt option:selected').text());
         $('#summaryDiv').append('<br>');
-        $('#summaryDiv').append('Suspender Buttons: '+$('#suspenders').val());
+        $('#summaryDiv').append('Suspender Buttons: '+$('#suspenders option:selected').text());
         $('#summaryDiv').append('<br>');
         $('#summaryDiv').append('Coat Monogram: '+ $('#monoText').val()+' Color: '+$('#monoColorName').val()+' Font: '+$('#monoFontName').val());
         $('#summaryDiv').append('<br>');
